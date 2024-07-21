@@ -20,3 +20,14 @@
 #
 # d1, d2, d3, d4, d5 = map(int, input().split())
 # print(max(d1, d2, d3, d4, d5))
+
+
+# Task 4 Допишите текст программы для вычисления евклидового расстояния (гипотенузы)
+# по перемещениям a и b (формула): . Округлите результат с точностью до сотых.
+# Полученное значение выведите на экран.
+#
+# a, b = map(int, input().split())
+# import math
+# result = math.sqrt(a**2 + b**2)
+# result_rounded = round(result, 2)
+# print(result_rounded)
