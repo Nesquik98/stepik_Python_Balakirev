@@ -29,6 +29,13 @@
 # Word 1: s1 | Word 2: s2
 # Например, если s1 = "abc"; s2 = "defsg", то выводится строка:
 # Word 1: abc | Word 2: defsg
+#
+# s1, s2 = map(str.strip, input().split())
+# print(f'Word 1: {s1} | Word 2: {s2}')
 
-s1, s2 = map(str.strip, input().split())
-print(f'Word 1: {s1} | Word 2: {s2}')
+
+# Task 5 Напишите программу, в которой вводятся (читаются) два целых положительных числа, записанных в одну
+# строчку через пробел, и в консоль выводится результат возведения первого числа в степень второго.
+
+a, b = map(int, input().split())
+print(a ** b)
