@@ -18,10 +18,10 @@
 
 # Task 3
 
-lst = list(input())
-lst = [x for x in lst if x.isdigit() or x in ('(', ')')]
-lst[0] = str(8)
-print("".join(lst))
+# lst = list(input())
+# lst = [x for x in lst if x.isdigit() or x in ('(', ')')]
+# lst[0] = str(8)
+# print("".join(lst))
 
 # lst.remove('+')
 # lst.remove('-')
@@ -29,3 +29,8 @@ print("".join(lst))
 # lst.remove('7')
 # lst.insert(0, '8')
 
+
+# Task 4
+#
+# name = input().split()
+# print(f'{name[2]} {name[0][0]}.{name[1][0]}.')
