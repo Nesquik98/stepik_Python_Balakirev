@@ -10,7 +10,22 @@
 
 
 # Task 2
+#
+# cities = ["Москва", "Казань", "Ярославль"]
+# cities.insert(1, 'Ульяновск')
+# print(*cities)
 
-cities = ["Москва", "Казань", "Ярославль"]
-cities.insert(1, 'Ульяновск')
-print(*cities)
+
+# Task 3
+
+lst = list(input())
+lst = [x for x in lst if x.isdigit() or x in ('(', ')')]
+lst[0] = str(8)
+print("".join(lst))
+
+# lst.remove('+')
+# lst.remove('-')
+# lst.remove('-')
+# lst.remove('7')
+# lst.insert(0, '8')
+
