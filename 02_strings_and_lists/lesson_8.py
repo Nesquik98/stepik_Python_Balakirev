@@ -49,5 +49,6 @@
 # print(*lst)
 
 
-# Task
+# Task 7
 
+print(list(map(int, input().split())).count(2))
