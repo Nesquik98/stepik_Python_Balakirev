@@ -37,5 +37,17 @@
 
 
 # Task 5
+#
+# print(*sorted(map(int, input().split()))[:3])
 
-print(*sorted(map(int, input().split()))[:3])
+
+# Task 6
+#
+# lst = list(map(int, input().split()))
+# last_item = lst.pop()
+# lst.append(last_item % 2 != 0)
+# print(*lst)
+
+
+# Task
+
