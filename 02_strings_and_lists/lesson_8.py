@@ -50,5 +50,12 @@
 
 
 # Task 7
+#
+# print(list(map(int, input().split())).count(2))
 
-print(list(map(int, input().split())).count(2))
+
+# Task 8
+
+lst = sorted(input().split())
+lst.pop(0)
+print(*lst)
