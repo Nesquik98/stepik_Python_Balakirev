@@ -7,6 +7,12 @@
 
 
 # Task 2
+#
+# result = [input().split(), input().split(), input().split()]
+# print(result)
+
+
+# Task 3
 
 result = [input().split(), input().split(), input().split()]
-print(result)
+print(result[0][-1], result[1][-1], result[2][-1])
