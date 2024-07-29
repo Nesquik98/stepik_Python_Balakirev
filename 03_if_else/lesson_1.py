@@ -8,9 +8,18 @@
 
 
 # Task 2
+#
+# word = input().lower()
+# if word == word[::-1]:
+#     print('ДА')
+# else:
+#      print('НЕТ')
 
-word = input().lower()
-if word == word[::-1]:
-    print('ДА')
+
+# Task 3
+
+m, n = map(int, input().split())
+if m % n == 0:
+    print(m // n)
 else:
-     print('НЕТ')
+    print(f'{m} на {n} нацело не делится')
