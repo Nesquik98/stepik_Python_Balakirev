@@ -26,10 +26,19 @@
 
 
 # Task 4
+#
+# a, b, c = map(int, input().split())
+#
+# if c ** 2 == a ** 2 + b ** 2:
+#     print('ДА')
+# else:
+#     print('НЕТ')
 
-a, b, c = map(int, input().split())
 
-if c ** 2 == a ** 2 + b ** 2:
+# Task 5
+
+a = input().strip()
+if a [-1]== '7':
     print('ДА')
 else:
     print('НЕТ')
