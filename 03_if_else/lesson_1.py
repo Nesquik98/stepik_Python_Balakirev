@@ -17,9 +17,19 @@
 
 
 # Task 3
+#
+# m, n = map(int, input().split())
+# if m % n == 0:
+#     print(m // n)
+# else:
+#     print(f'{m} на {n} нацело не делится')
 
-m, n = map(int, input().split())
-if m % n == 0:
-    print(m // n)
+
+# Task 4
+
+a, b, c = map(int, input().split())
+
+if c ** 2 == a ** 2 + b ** 2:
+    print('ДА')
 else:
-    print(f'{m} на {n} нацело не делится')
+    print('НЕТ')
