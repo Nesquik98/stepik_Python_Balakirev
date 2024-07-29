@@ -36,9 +36,18 @@
 
 
 # Task 5
+#
+# a = input().strip()
+# if a [-1]== '7':
+#     print('ДА')
+# else:
+#     print('НЕТ')
 
-a = input().strip()
-if a [-1]== '7':
-    print('ДА')
-else:
-    print('НЕТ')
+
+# Task 6
+#
+# a = input().strip().lower()
+# if 't' in a and 'h' in a and 'o' in a:
+#     print('ДА')
+# else:
+#     print('НЕТ')
