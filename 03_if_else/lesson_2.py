@@ -50,3 +50,25 @@
 #     print('3')
 # elif weight > 69:
 #     print('4')
+
+
+# Task 4
+
+days = int(input())
+if days == 1:
+    days = 'понедельник'
+elif days == 2:
+    days = 'вторник'
+elif days == 3:
+    days = 'среда'
+elif days == 4:
+    days = 'четверг'
+elif days == 5:
+    days = 'пятница'
+elif days == 6:
+    days = 'суббота'
+elif days == 7:
+    days = 'воскресенье'
+else:
+    days = 'Данного дня недели не существует'
+print(days)
