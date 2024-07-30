@@ -53,22 +53,36 @@
 
 
 # Task 4
+#
+# days = int(input())
+# if days == 1:
+#     days = 'понедельник'
+# elif days == 2:
+#     days = 'вторник'
+# elif days == 3:
+#     days = 'среда'
+# elif days == 4:
+#     days = 'четверг'
+# elif days == 5:
+#     days = 'пятница'
+# elif days == 6:
+#     days = 'суббота'
+# elif days == 7:
+#     days = 'воскресенье'
+# else:
+#     days = 'Данного дня недели не существует'
+# print(days)
 
-days = int(input())
-if days == 1:
-    days = 'понедельник'
-elif days == 2:
-    days = 'вторник'
-elif days == 3:
-    days = 'среда'
-elif days == 4:
-    days = 'четверг'
-elif days == 5:
-    days = 'пятница'
-elif days == 6:
-    days = 'суббота'
-elif days == 7:
-    days = 'воскресенье'
+
+# Task 5
+
+month = int(input())
+if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+    month = 31
+elif month == 4 or month == 6 or month == 9 or month == 11:
+    month = 30
+elif month == 2:
+    month = 28
 else:
-    days = 'Данного дня недели не существует'
-print(days)
+    month = 'В месяце не может быть столько дней'
+print(month)
