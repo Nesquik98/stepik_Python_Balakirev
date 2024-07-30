@@ -51,3 +51,11 @@
 #     print('ДА')
 # else:
 #     print('НЕТ')
+
+
+# Task 7
+
+cities = list(input().split())
+if 'Москва' in cities:
+    cities.remove('Москва')
+print(*cities)
