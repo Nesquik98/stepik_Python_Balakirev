@@ -71,10 +71,19 @@
 
 
 # Task 9
+#
+# number = input()
+# if number.isdigit() and len(number) == 6:
+#     if sum(int(a) for a in number[:3]) == sum(int(a) for a in number[3:]):
+#         print('ДА')
+#     else:
+#         print('НЕТ')
 
-number = input()
-if number.isdigit() and len(number) == 6:
-    if sum(int(a) for a in number[:3]) == sum(int(a) for a in number[3:]):
-        print('ДА')
-    else:
-        print('НЕТ')
+
+# Task 10
+
+t = float(input())
+if (t % 5) < 3:
+    print('green')
+else:
+    print('red')
