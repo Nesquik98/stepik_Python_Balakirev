@@ -54,8 +54,17 @@
 
 
 # Task 7
+#
+# cities = list(input().split())
+# if 'Москва' in cities:
+#     cities.remove('Москва')
+# print(*cities)
 
-cities = list(input().split())
-if 'Москва' in cities:
-    cities.remove('Москва')
-print(*cities)
+
+# Task 8
+
+a, b, c, d = map(int, input().split())
+if (a - c) >= 2 and (b - d) >= 2 or (a - d) >= 2 and (b - c) >= 2:
+    print('ДА')
+else:
+    print('НЕТ')
