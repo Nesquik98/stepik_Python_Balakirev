@@ -62,9 +62,19 @@
 
 
 # Task 8
+#
+# a, b, c, d = map(int, input().split())
+# if (a - c) >= 2 and (b - d) >= 2 or (a - d) >= 2 and (b - c) >= 2:
+#     print('ДА')
+# else:
+#     print('НЕТ')
 
-a, b, c, d = map(int, input().split())
-if (a - c) >= 2 and (b - d) >= 2 or (a - d) >= 2 and (b - c) >= 2:
-    print('ДА')
-else:
-    print('НЕТ')
+
+# Task 9
+
+number = input()
+if number.isdigit() and len(number) == 6:
+    if sum(int(a) for a in number[:3]) == sum(int(a) for a in number[3:]):
+        print('ДА')
+    else:
+        print('НЕТ')
