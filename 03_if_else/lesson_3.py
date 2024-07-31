@@ -27,8 +27,22 @@
 
 
 # Task 5
+#
+# time = int(input().strip())
+# next_time = 0 if time == 59 else time + 1
+# print(next_time)
 
-time = int(input().strip())
-next_time = 0 if time == 59 else time + 1
-print(next_time)
 
+# Task 6
+
+
+m = ['до', 'ре', 'ми', 'фа', 'соль', 'ля', 'си']
+numbers = input().split()
+res = []
+for num in numbers:
+    index = int(num) - 1
+    note = m[index]
+    if note in ['до', 'фа']:
+        note = '#' + note
+    res.append(note)
+print(' '.join(res))
