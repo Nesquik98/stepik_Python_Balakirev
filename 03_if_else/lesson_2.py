@@ -75,14 +75,41 @@
 
 
 # Task 5
+#
+# month = int(input())
+# if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+#     month = 31
+# elif month == 4 or month == 6 or month == 9 or month == 11:
+#     month = 30
+# elif month == 2:
+#     month = 28
+# else:
+#     month = 'В месяце не может быть столько дней'
+# print(month)
 
-month = int(input())
-if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
-    month = 31
-elif month == 4 or month == 6 or month == 9 or month == 11:
-    month = 30
-elif month == 2:
-    month = 28
+
+# Task 6
+
+all_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+month, day = map(int, input().split())
+prev_month = None
+next_month = None
+next_day = None
+prev_day = None
+if day == 1:
+    prev_day = all_month[month - 2]
+    next_day = 2
+    prev_month = month - 1 if month != 1 else 12
+    next_month = month
+elif day == all_month[month - 1]:
+    prev_day = day - 1
+    next_day = 1
+    prev_month = month
+    next_month = month + 1 if month != 12 else 1
 else:
-    month = 'В месяце не может быть столько дней'
-print(month)
+    prev_day = day - 1
+    next_day = day + 1
+    next_month = month
+    prev_month = month
+print(f"{'%02d' % prev_month}.{'%02d' % prev_day} {'%02d' % next_month}.{'%02d' % next_day}")
