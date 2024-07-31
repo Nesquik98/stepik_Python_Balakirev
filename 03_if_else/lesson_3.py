@@ -13,7 +13,16 @@
 
 
 # Task 3
+#
+# word = input().strip()
+# msg = 'палиндром' if word.lower() == word[::-1].lower() else 'не палиндром'
+# print(msg)
 
-word = input().strip()
-msg = 'палиндром' if word.lower() == word[::-1].lower() else 'не палиндром'
-print(msg)
+
+# Task 4
+
+number = int(input().strip())
+res = 'True' if number == 1 else 'False'
+print(res)
+
+
