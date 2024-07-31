@@ -6,7 +6,14 @@
 
 
 # Task 2
+#
+# a = int(input())
+# msg = 'кратно 3' if a % 3 == 0 else 'не кратно 3'
+# print(msg)
 
-a = int(input())
-msg = 'кратно 3' if a % 3 == 0 else 'не кратно 3'
+
+# Task 3
+
+word = input().strip()
+msg = 'палиндром' if word.lower() == word[::-1].lower() else 'не палиндром'
 print(msg)
