@@ -20,9 +20,15 @@
 
 
 # Task 4
+#
+# number = int(input().strip())
+# res = 'True' if number == 1 else 'False'
+# print(res)
 
-number = int(input().strip())
-res = 'True' if number == 1 else 'False'
-print(res)
 
+# Task 5
+
+time = int(input().strip())
+next_time = 0 if time == 59 else time + 1
+print(next_time)
 
