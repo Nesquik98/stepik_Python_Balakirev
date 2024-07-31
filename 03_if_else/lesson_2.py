@@ -89,27 +89,49 @@
 
 
 # Task 6
+#
+# all_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#
+# month, day = map(int, input().split())
+# prev_month = None
+# next_month = None
+# next_day = None
+# prev_day = None
+# if day == 1:
+#     prev_day = all_month[month - 2]
+#     next_day = 2
+#     prev_month = month - 1 if month != 1 else 12
+#     next_month = month
+# elif day == all_month[month - 1]:
+#     prev_day = day - 1
+#     next_day = 1
+#     prev_month = month
+#     next_month = month + 1 if month != 12 else 1
+# else:
+#     prev_day = day - 1
+#     next_day = day + 1
+#     next_month = month
+#     prev_month = month
+# print(f"{'%02d' % prev_month}.{'%02d' % prev_day} {'%02d' % next_month}.{'%02d' % next_day}")
 
-all_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-month, day = map(int, input().split())
-prev_month = None
-next_month = None
-next_day = None
-prev_day = None
-if day == 1:
-    prev_day = all_month[month - 2]
-    next_day = 2
-    prev_month = month - 1 if month != 1 else 12
-    next_month = month
-elif day == all_month[month - 1]:
-    prev_day = day - 1
-    next_day = 1
-    prev_month = month
-    next_month = month + 1 if month != 12 else 1
-else:
-    prev_day = day - 1
-    next_day = day + 1
-    next_month = month
-    prev_month = month
-print(f"{'%02d' % prev_month}.{'%02d' % prev_day} {'%02d' % next_month}.{'%02d' % next_day}")
+# Task 7
+
+week = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье']
+k = int(input())
+if 1 <= k <= 365:
+    if k % 7 == 1:
+        k = week[0]
+    elif k % 7 == 2:
+        k = week[1]
+    elif k % 7 == 3:
+        k = week[2]
+    elif k % 7 == 4:
+        k = week[3]
+    elif k % 7 == 5:
+        k = week[4]
+    elif k % 7 == 6:
+        k = week[5]
+    elif k % 7 == 7:
+        k = week[6]
+print(k)
