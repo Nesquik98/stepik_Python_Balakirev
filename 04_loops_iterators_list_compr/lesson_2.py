@@ -57,5 +57,20 @@
 #     print('НЕТ')
 
 
+# print(('НЕТ','ДА')[any(i for i in input().lower().split() if i[0] == i[-1])])
+
+# Task 5
+#
+# n = int(input())
+# if n > 99:
+#     print('слишком большое значение n')
+# else:
+#     i = 15
+#     while i <= n:
+#         if i % 3 == 0 and i % 5 == 0:
+#             print(i, end=' ')
+#         i += 15
+
+
 
 
