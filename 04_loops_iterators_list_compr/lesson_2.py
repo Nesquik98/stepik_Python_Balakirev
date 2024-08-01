@@ -39,3 +39,23 @@
 # else:
 #     print('НЕТ')
 
+
+# Task 4
+#
+# names = input().split()
+# i = 0
+# name_rev = False
+# while i < len(names):
+#     name = names[i] #текущее имя
+#     if name[0].lower() == name[-1].lower():  # первая и последняя буква строчные
+#         name_rev = True
+#         break # найдено слово цикл прерван
+#     i += 1
+# if name_rev:
+#     print('ДА')
+# else:
+#     print('НЕТ')
+
+
+
+
