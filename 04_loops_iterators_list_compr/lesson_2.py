@@ -22,3 +22,20 @@
 #         continue
 #     p *= num
 # print(p)
+
+
+# Task 3
+#
+# city = input().split()
+# i = 0       # инициализация индекса
+# word_length = True      # флаг проверки длин слов
+# while i < len(city):
+#     if len(city[i]) <= 5:
+#         word_length = False
+#         break
+#     i += 1
+# if word_length:
+#     print('ДА')
+# else:
+#     print('НЕТ')
+
