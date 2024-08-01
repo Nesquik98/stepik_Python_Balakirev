@@ -40,9 +40,19 @@
 
 
 # Task 5
+#
+# s = input()
+# while '--' in s:
+#     s = s.replace('--', '-')
+# print(s)
 
-s = input()
-while '--' in s:
-    s = s.replace('--', '-')
-print(s)
 
+# Task 6
+
+n = int(input())
+counter = 1
+while n > 0:
+    n_last = n % 10
+    counter *= n_last
+    n = n // 10
+print(counter)
