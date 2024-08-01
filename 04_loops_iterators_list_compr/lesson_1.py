@@ -73,11 +73,28 @@
 
 
 # Task 8
+#
+# n = int(input())
+# a = 1
+# i = 3
+# while i < n:
+#     a *= 2
+#     i += 3
+# print(a)
 
+
+# Task 9
+#
+# counter = 1000
+# n = int(input())
+# for i in range(n):
+#     counter += counter * 0.05
+# print(round(counter, 2))
+
+counter = 1000
+year = 0
 n = int(input())
-a = 1
-i = 3
-while i < n:
-    a *= 2
-    i += 3
-print(a)
+while year < n:
+    counter += counter * 0.05
+    year += 1
+print(round(counter, 2))
