@@ -59,14 +59,25 @@
 
 
 # Task 7
+#
+# n = int(input())
+# if n == 0:
+#     print('')
+# else:
+#     f1, f2 = 1, 1
+#     res_f = []
+#     while len(res_f) < n:
+#         res_f.append(f1)
+#         f1, f2 = f2, f1 + f2
+# print(' '.join(map(str, res_f)))
+
+
+# Task 8
 
 n = int(input())
-if n == 0:
-    print('')
-else:
-    f1, f2 = 1, 1
-    res_f = []
-    while len(res_f) < n:
-        res_f.append(f1)
-        f1, f2 = f2, f1 + f2
-print(' '.join(map(str, res_f)))
+a = 1
+i = 3
+while i < n:
+    a *= 2
+    i += 3
+print(a)
