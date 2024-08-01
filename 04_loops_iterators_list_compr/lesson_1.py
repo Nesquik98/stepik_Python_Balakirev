@@ -29,11 +29,20 @@
 
 
 # Task 4
+#
+# counter = 0
+# while True:
+#     num = int(input())
+#     if num == 0:
+#         break
+#     counter += num
+# print(counter)
 
-counter = 0
-while True:
-    num = int(input())
-    if num == 0:
-        break
-    counter += num
-print(counter)
+
+# Task 5
+
+s = input()
+while '--' in s:
+    s = s.replace('--', '-')
+print(s)
+
