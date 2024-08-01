@@ -90,11 +90,20 @@
 # for i in range(n):
 #     counter += counter * 0.05
 # print(round(counter, 2))
+#
+# counter = 1000
+# year = 0
+# n = int(input())
+# while year < n:
+#     counter += counter * 0.05
+#     year += 1
+# print(round(counter, 2))
 
-counter = 1000
-year = 0
-n = int(input())
-while year < n:
-    counter += counter * 0.05
-    year += 1
-print(round(counter, 2))
+
+# Task 10
+
+n, m = map(int, input().split())
+i = n + 1
+while i < m:
+    print(i, end=' ')
+    i += 2
