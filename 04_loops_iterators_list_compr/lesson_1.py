@@ -101,9 +101,18 @@
 
 
 # Task 10
+#
+# n, m = map(int, input().split())
+# i = n + 1
+# while i < m:
+#     print(i, end=' ')
+#     i += 2
 
-n, m = map(int, input().split())
-i = n + 1
-while i < m:
-    print(i, end=' ')
-    i += 2
+
+# Task 11
+
+num = 100
+while num <= 999:
+    if num % 47 == 43 and num % 3 == 0:
+        print(num, end=' ')
+    num += 1
