@@ -18,11 +18,22 @@
 
 
 # Task 3
+#
+# n = int(input())
+# sum = 0
+# i = 1
+# while i <= n:
+#     sum += 1 / i
+#     i += 1
+# print(f'{sum:.3f}')
 
-n = int(input())
-sum = 0
-i = 1
-while i <= n:
-    sum += 1 / i
-    i += 1
-print(f'{sum:.3f}')
+
+# Task 4
+
+counter = 0
+while True:
+    num = int(input())
+    if num == 0:
+        break
+    counter += num
+print(counter)
