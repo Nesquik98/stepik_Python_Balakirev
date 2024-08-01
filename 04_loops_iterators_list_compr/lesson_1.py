@@ -48,11 +48,25 @@
 
 
 # Task 6
+#
+# n = int(input())
+# counter = 1
+# while n > 0:
+#     n_last = n % 10
+#     counter *= n_last
+#     n = n // 10
+# print(counter)
+
+
+# Task 7
 
 n = int(input())
-counter = 1
-while n > 0:
-    n_last = n % 10
-    counter *= n_last
-    n = n // 10
-print(counter)
+if n == 0:
+    print('')
+else:
+    f1, f2 = 1, 1
+    res_f = []
+    while len(res_f) < n:
+        res_f.append(f1)
+        f1, f2 = f2, f1 + f2
+print(' '.join(map(str, res_f)))
