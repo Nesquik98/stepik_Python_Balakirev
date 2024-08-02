@@ -80,3 +80,13 @@
 #     x += 1
 # print(x)
 
+
+# Task 7
+
+distance = 10
+day = 1
+x = int(input())
+while distance <= x: #пока дистанция не станет больше x
+    distance += distance * 0.1 #увеличение дистанции на 10%
+    day += 1 #следующий день
+print(day)
