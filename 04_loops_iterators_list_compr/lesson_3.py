@@ -1,4 +1,10 @@
 # Task 1
+#
+# for i in range(11):
+#     print(i, sep=' ', end=' ')
 
-for i in range(11):
-    print(i, sep=' ', end=' ')
+# print(*range(11))
+
+# Task 2
+
+print(*range(-10, 1))
