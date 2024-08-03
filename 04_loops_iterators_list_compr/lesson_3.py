@@ -21,11 +21,21 @@
 
 
 # Task 5
+#
+# numbers = list(map(int, input().split()))
+# summ = 0
+# for i in numbers:
+#     if i % 2 != 0:
+#         summ += i
+# print(summ)
 
-numbers = list(map(int, input().split()))
-summ = 0
-for i in numbers:
-    if i % 2 != 0:
-        summ += i
-print(summ)
+
+# Task 6
+#
+# cities = list(map(str, input().split()))
+# for i, val in enumerate(cities):
+#     cities[i] = len(val)
+# print(*cities)
+
+
 
