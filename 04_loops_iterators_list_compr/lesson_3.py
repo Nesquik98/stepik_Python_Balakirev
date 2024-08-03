@@ -16,5 +16,16 @@
 
 
 # Task 4
+#
+# print(*range(1, 20, 3))
 
-print(*range(1, 20, 3))
+
+# Task 5
+
+numbers = list(map(int, input().split()))
+summ = 0
+for i in numbers:
+    if i % 2 != 0:
+        summ += i
+print(summ)
+
