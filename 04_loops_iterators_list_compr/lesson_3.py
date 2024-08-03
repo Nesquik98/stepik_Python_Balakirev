@@ -11,5 +11,10 @@
 
 
 # Task 3
+#
+# print(*range(-10, -1, 2))
 
-print(*range(-10, -1, 2))
+
+# Task 4
+
+print(*range(1, 20, 3))
