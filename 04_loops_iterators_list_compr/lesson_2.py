@@ -82,11 +82,30 @@
 
 
 # Task 7
+#
+# distance = 10
+# day = 1
+# x = int(input())
+# while distance <= x: #пока дистанция не станет больше x
+#     distance += distance * 0.1 #увеличение дистанции на 10%
+#     day += 1 #следующий день
+# print(day)
 
-distance = 10
-day = 1
-x = int(input())
-while distance <= x: #пока дистанция не станет больше x
-    distance += distance * 0.1 #увеличение дистанции на 10%
-    day += 1 #следующий день
-print(day)
+
+# Task 8
+#
+# import sys
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# result = []  #список для хранения отобранных слов
+# i = 0  #счетчик для цикла while
+# while i < len(lst_in):
+#     if len(lst_in[i].split()) == 1: #возвращает количество слов в строке
+#         result.append(lst_in[i]) #добавлениев список для хранения слов
+#     i += 1  #переход к следующему элементу списка
+# print(' '.join(result))
+
+#
+# import sys
+# print(*filter(lambda x: not len(x.split()) > 1, sys.stdin.read().splitlines()))
+
+
