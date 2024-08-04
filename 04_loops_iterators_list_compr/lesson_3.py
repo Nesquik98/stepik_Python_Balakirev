@@ -39,10 +39,21 @@
 
 
 # Task 7
+#
+# n = int(input())
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         print(i)
+
+
+# Task 8
 
 n = int(input())
-for i in range(1, n + 1):
+for i in range(2, int(n**0.5)):
     if n % i == 0:
-        print(i)
+        print('НЕТ')
+        break
+else:
+    print('ДА')
 
 
