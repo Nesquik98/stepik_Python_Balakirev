@@ -47,13 +47,41 @@
 
 
 # Task 8
+#
+# n = int(input())
+# for i in range(2, int(n**0.5)):
+#     if n % i == 0:
+#         print('НЕТ')
+#         break
+# else:
+#     print('ДА')
 
-n = int(input())
-for i in range(2, int(n**0.5)):
-    if n % i == 0:
-        print('НЕТ')
+
+# Task 9
+
+cities = list(map(str, input().split()))
+mark = ['ь', 'ъ', 'ы']
+result = True
+
+for i, city in enumerate(cities):
+
+    if i + 1 == len(cities):
         break
-else:
+
+    if city[-1] not in mark:
+        result = city[-1] == cities[i + 1][0].lower()
+    else:
+        result = city[-2] == cities[i + 1][0].lower()
+
+    if not result:
+        break
+
+if result:
     print('ДА')
+else:
+    print('НЕТ')
+
+
+
 
 
