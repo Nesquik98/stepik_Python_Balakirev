@@ -58,28 +58,38 @@
 
 
 # Task 9
+#
+# cities = list(map(str, input().split()))
+# mark = ['ь', 'ъ', 'ы']
+# result = True
+#
+# for i, city in enumerate(cities):
+#
+#     if i + 1 == len(cities):
+#         break
+#
+#     if city[-1] not in mark:
+#         result = city[-1] == cities[i + 1][0].lower()
+#     else:
+#         result = city[-2] == cities[i + 1][0].lower()
+#
+#     if not result:
+#         break
+#
+# if result:
+#     print('ДА')
+# else:
+#     print('НЕТ')
 
-cities = list(map(str, input().split()))
-mark = ['ь', 'ъ', 'ы']
-result = True
 
-for i, city in enumerate(cities):
-
-    if i + 1 == len(cities):
-        break
-
-    if city[-1] not in mark:
-        result = city[-1] == cities[i + 1][0].lower()
-    else:
-        result = city[-2] == cities[i + 1][0].lower()
-
-    if not result:
-        break
-
-if result:
-    print('ДА')
-else:
-    print('НЕТ')
+# Task 10
+#
+# n = int(input())
+# summ = []
+# for i in range(3, n):
+#     if i % 3 == 0 or i % 5 == 0:
+#         summ.append(i)
+# print(sum(summ))
 
 
 
