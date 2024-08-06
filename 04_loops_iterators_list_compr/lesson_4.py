@@ -71,8 +71,17 @@
 #     index += 2
 # print(*numbers)
 
+#
+# numbers = list(map(int, input().split()))
+# for i in range(0, len(numbers) * 2, 2):
+#     numbers.insert(i, numbers[i])
+# print(*numbers)
 
-numbers = list(map(int, input().split()))
-for i in range(0, len(numbers) * 2, 2):
-    numbers.insert(i, numbers[i])
-print(*numbers)
+
+# Task 6
+numbers = list(map(float, input().split()))
+min_numbers = numbers[0]
+for number in numbers:
+    if number < min_numbers:
+        min_numbers = number
+print(min_numbers)
