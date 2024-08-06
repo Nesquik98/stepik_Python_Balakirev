@@ -30,26 +30,36 @@
 
 
 # Task 3
-numbers = input().strip().replace(' ', '')
+# numbers = input().strip().replace(' ', '')
+#
+# operands_lst = [x for x in numbers if x in ('-', '+')]
+# numbers_lst = []
+#
+# start_num_index = 0
+# for index, item in enumerate(numbers):
+#     if not item.isdigit():
+#         numbers_lst.append(int(numbers[start_num_index:index]))
+#         start_num_index = index + 1
+# else:
+#     numbers_lst.append(int(numbers[start_num_index:]))
+#
+#
+# temp = None
+# for index, item in enumerate(operands_lst):
+#     if item == '+':
+#         temp = numbers_lst[index] + numbers_lst[index + 1]
+#         numbers_lst[index + 1] = temp
+#     elif item == '-':
+#         temp = numbers_lst[index] - numbers_lst[index + 1]
+#         numbers_lst[index + 1] = temp
+# print(temp)
 
-operands_lst = [x for x in numbers if x in ('-', '+')]
-numbers_lst = []
 
-start_num_index = 0
-for index, item in enumerate(numbers):
-    if not item.isdigit():
-        numbers_lst.append(int(numbers[start_num_index:index]))
-        start_num_index = index + 1
-else:
-    numbers_lst.append(int(numbers[start_num_index:]))
+# Task 4
 
 
-temp = None
-for index, item in enumerate(operands_lst):
-    if item == '+':
-        temp = numbers_lst[index] + numbers_lst[index + 1]
-        numbers_lst[index + 1] = temp
-    elif item == '-':
-        temp = numbers_lst[index] - numbers_lst[index + 1]
-        numbers_lst[index + 1] = temp
-print(temp)
+numbers = list(map(int, input().split()))
+for i, number in enumerate(numbers):
+    numbers[i] = number ** 2
+print(*numbers)
+
