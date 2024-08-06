@@ -56,10 +56,23 @@
 
 
 # Task 4
+# numbers = list(map(int, input().split()))
+# for i, number in enumerate(numbers):
+#     numbers[i] = number ** 2
+# print(*numbers)
+
+
+# Task 5
+#
+# numbers = list(map(int, input().split()))
+# index = 0
+# while index < len(numbers):
+#     numbers.insert(index, numbers[index])
+#     index += 2
+# print(*numbers)
 
 
 numbers = list(map(int, input().split()))
-for i, number in enumerate(numbers):
-    numbers[i] = number ** 2
+for i in range(0, len(numbers) * 2, 2):
+    numbers.insert(i, numbers[i])
 print(*numbers)
-
