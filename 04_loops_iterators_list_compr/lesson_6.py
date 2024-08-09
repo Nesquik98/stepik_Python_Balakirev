@@ -13,3 +13,14 @@
 # for line in mtrx:
 #   print(*line)
 
+# Task 2
+import sys
+# считывание списка из входного потока
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+# ['Hello', 'World', 'Python']  - пример того что будет создано, все пробелы в начале и конце строк удалены.
+
+for string in lst_in:
+    print('-'.join(string.split()))
+
+
+
