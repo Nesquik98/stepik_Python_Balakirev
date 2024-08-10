@@ -22,7 +22,7 @@
 # for string in lst_in:
 #     print('-'.join(string.split()))
 
-#Task 4
+# Task 4
 # def is_prime(number):
 #     for i in range(2, int(number ** 0.5) + 1):
 #         if number % i == 0:
@@ -56,3 +56,25 @@
 #     else:                   # Если не был выполнен break, выполняется else
 #         res.append(num)     # Добавляем простое число в список
 # print(*res)
+
+
+# Task 4
+# import sys
+#
+# s, flag = sys.stdin.readlines(), False*
+# lst_in = [[1, 0, 0, 0, 0],
+#           [0, 0, 1, 0, 1],
+#           [0, 0, 0, 0, 0],
+#           [0, 1, 0, 1, 0],
+#           [0, 0, 0, 0, 0]]  # [list(map(int, x.strip().split())) for x in s]
+# flag = False
+# for i in range(4):
+#     for j in range(4):
+#         if lst_in[i][j] + lst_in[i][j + 1] + lst_in[i + 1][j] + lst_in[i + 1][j + 1] > 1:
+#             print('НЕТ')
+#             flag = True
+#             break
+#     if flag:
+#         break
+# else:
+#     print('ДА')-+
