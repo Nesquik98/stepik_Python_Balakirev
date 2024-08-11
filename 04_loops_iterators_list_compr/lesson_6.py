@@ -78,3 +78,30 @@
 #         break
 # else:
 #     print('ДА')-+
+
+
+# Task 5
+
+# import sys
+#
+# s = sys.stdin.readlines()
+# lst_in = [list(map(int, x.strip().split())) for x in s]
+
+# lst_in = [[2, 3, 4, 5, 6],
+#           [3, 2, 7, 8, 9],
+#           [4, 7, 2, 0, 4],
+#           [5, 8, 0, 2, 1],
+#           [6, 9, 4, 1, 2]]
+# flag = False
+# for i_index, i_elem in enumerate(lst_in):
+#     for j_index, j_elem in enumerate(i_elem):
+#         if j_elem != lst_in[j_index][i_index]:
+#             flag = True
+#             break
+#     if flag:
+#         print('НЕТ')
+#         break
+# else:
+#     print('ДА')
+
+
