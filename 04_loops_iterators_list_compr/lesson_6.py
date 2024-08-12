@@ -117,4 +117,12 @@
 
 
 # Task 7
-
+# numbers = list(map(int, input().split()))
+# negatives = [num for num in numbers if num < 0]
+# positives = [num for num in numbers if num >= 0]
+#
+# negatives.sort()
+# positives.sort()
+#
+# sorted_numbers = negatives + positives
+# print(*sorted_numbers)
