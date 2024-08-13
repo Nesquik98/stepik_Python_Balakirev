@@ -126,3 +126,15 @@
 #
 # sorted_numbers = negatives + positives
 # print(*sorted_numbers)
+
+
+# Task 8
+
+banknotes = [64, 32, 16, 8, 4, 2, 1]
+n = int(input())
+result = []
+for banknote in banknotes:
+    while n >= banknote:
+        result.append(banknote)
+        n -= banknote
+print(' '.join(map(str, result)))
