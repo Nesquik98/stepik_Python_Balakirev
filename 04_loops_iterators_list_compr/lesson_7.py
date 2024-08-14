@@ -35,9 +35,10 @@
 # print(lst_abs)
 
 
+# Task 2
 
-
-
+# input_number = input()
+print([int(x) for x in input()])
 
 
 
