@@ -40,7 +40,6 @@
 
 
 # Task 3
-
 # for i in range(N):
 #     for j in range(N):
 #         if i == j:
@@ -48,13 +47,21 @@
 #         else:
 #             print(0, end=' ')
 
-N = int(input())
-lst = [[1 if i == j else 0 for j in range(N)] for i in range(N)]
-for k in lst:
-    print(*k)
+# N = int(input())
+# lst = [[1 if i == j else 0 for j in range(N)] for i in range(N)]
+# for k in lst:
+#     print(*k)
+#
+# N = int(input())
+# mtrx = [[[0, 1][x == y] for y in range(N)] for x in range(N)]
+# for line in mtrx:
+#     print(*line)
 
-N = int(input())
-mtrx = [[[0, 1][x == y] for y in range(N)] for x in range(N)]
-for line in mtrx:
-    print(*line)
+
+# Task 4
+# input_cities = input().split()
+# long_cities = [city for city in input_cities if len(city) > 5]
+# print(*long_cities)
+
+# print(*[city for city in input().split() if len(city) > 5])
 
