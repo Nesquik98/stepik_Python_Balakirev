@@ -67,6 +67,12 @@
 
 
 # Task 5
+# number = int(input())
+# print(*[x for x in range(1, number + 1) if number % x == 0])
 
-number = int(input())
-print(*[x for x in range(1, number + 1) if number % x == 0])
+
+# Task 6
+# n = int(input())
+# mtrx = [[x for y in range(n)] for x in range(n)]
+# for line in mtrx:
+#     print(*line)
