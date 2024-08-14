@@ -65,3 +65,8 @@
 
 # print(*[city for city in input().split() if len(city) > 5])
 
+
+# Task 5
+
+number = int(input())
+print(*[x for x in range(1, number + 1) if number % x == 0])
