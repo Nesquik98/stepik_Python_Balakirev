@@ -76,3 +76,7 @@
 # mtrx = [[x for y in range(n)] for x in range(n)]
 # for line in mtrx:
 #     print(*line)
+
+# Task 7
+nums = list(map(float, input().split()))
+print(*[num for idx, num in enumerate(nums) if idx % 2 == 0])
