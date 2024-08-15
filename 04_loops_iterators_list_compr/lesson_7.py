@@ -78,5 +78,13 @@
 #     print(*line)
 
 # Task 7
-nums = list(map(float, input().split()))
-print(*[num for idx, num in enumerate(nums) if idx % 2 == 0])
+# nums = list(map(float, input().split()))
+# print(*[num for idx, num in enumerate(nums) if idx % 2 == 0])
+
+
+# Task 8
+num1 = list(map(int, input().split()))
+num2 = list(map(int, input().split()))
+print(*[num1[i] + num2[i] for i in range(len(num1))])
+
+print(*[sum(pair) for pair in zip(*[list(map(int, input().split())) for _ in range(2)])])
