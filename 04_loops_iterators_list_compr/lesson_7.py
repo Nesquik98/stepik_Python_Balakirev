@@ -83,8 +83,14 @@
 
 
 # Task 8
-num1 = list(map(int, input().split()))
-num2 = list(map(int, input().split()))
-print(*[num1[i] + num2[i] for i in range(len(num1))])
+# num1 = list(map(int, input().split()))
+# num2 = list(map(int, input().split()))
+# print(*[num1[i] + num2[i] for i in range(len(num1))])
+#
+# print(*[sum(pair) for pair in zip(*[list(map(int, input().split())) for _ in range(2)])])
 
-print(*[sum(pair) for pair in zip(*[list(map(int, input().split())) for _ in range(2)])])
+
+# Task 9
+# input_str = input().split()
+# lst = [[input_str[i], int(input_str[i + 1])] for i in range(0, len(input_str), 2)]
+# print(lst)
