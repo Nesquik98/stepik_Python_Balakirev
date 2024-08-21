@@ -20,14 +20,29 @@
 
 
 # Task 3
-t = ["– Скажи-ка, дядя, ведь не даром",
-    "Я Python выучил с каналом",
-    "Балакирев что раздавал?",
-    "Ведь были ж заданья боевые,",
-    "Да, говорят, еще какие!",
-    "Недаром помнит вся Россия",
-    "Как мы рубили их тогда!"
-    ]
+# t = ["– Скажи-ка, дядя, ведь не даром",
+#     "Я Python выучил с каналом",
+#     "Балакирев что раздавал?",
+#     "Ведь были ж заданья боевые,",
+#     "Да, говорят, еще какие!",
+#     "Недаром помнит вся Россия",
+#     "Как мы рубили их тогда!"
+#     ]
+# lst = [[word for word in s.split() if len(word) > 3] for s in t]
+# print(lst)
 
-lst = [[word for word in s.split() if len(word) > 3] for s in t]
-print(lst)
+
+# Task 4
+# import sys
+# s = sys.stdin.readlines()
+# lst_in = [list(map(int, x.strip().split())) for x in s]
+# A = [[lst_in[j][i] for j in range(len(lst_in))] for i in range(len(lst_in[0]))]
+# for row in A:
+#     print(*row)
+
+
+
+
+
+
+
