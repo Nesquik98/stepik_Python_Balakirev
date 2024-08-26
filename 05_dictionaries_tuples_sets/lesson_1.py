@@ -22,11 +22,22 @@
 
 
 # Task 3
-input_string = input().strip()  #удаляем пробелы вокруг строк
-pairs = input_string.split(' ')
-d = {pair.split('=')[0]: pair.split('=')[1] for pair in pairs}
-keys_to_check = ['house', 'True', '5']
-if all(key in d for key in keys_to_check):
-    print("ДА")
-else:
-    print("НЕТ")
+# input_string = input().strip()  #удаляем пробелы вокруг строк
+# pairs = input_string.split(' ')
+# d = {pair.split('=')[0]: pair.split('=')[1] for pair in pairs}
+# keys_to_check = ['house', 'True', '5']
+# if all(key in d for key in keys_to_check):
+#     print("ДА")
+# else:
+#     print("НЕТ")
+
+
+# Task 4
+# input_string = input().strip()
+# pairs = input_string.split(' ')
+# d = {pair.split('=')[0]: pair.split('=')[1] for pair in pairs}
+# if "False" in d:
+#     del d["False"]
+# if "3" in d:
+#     del d["3"]
+# print(*sorted(d.items()))
