@@ -44,12 +44,28 @@
 
 
 # Task 5
-phone_numbers = input().strip()
-numbers_list = phone_numbers.split(' ')
+# phone_numbers = input().strip()
+# numbers_list = phone_numbers.split(' ')
+# d = {}
+# for number in numbers_list:
+#     code = number[:2]
+#     if code not in d:
+#         d[code] = []
+#     d[code].append(number) # добавляем номер в нужный список
+# print(*sorted(d.items()))
+
+
+# Task 6
+import sys
+# считывание списка из входного потока
+lst_in = list(map(str.strip, sys.stdin.readlines()))
 d = {}
-for number in numbers_list:
-    code = number[:2]
-    if code not in d:
-        d[code] = []
-    d[code].append(number) # добавляем номер в нужный список
+for entry in lst_in:
+    #разбивка строки на номер телефона и имя
+    number, name = entry.split()
+    if name not in d:
+        # создание нового списка если оно отсутствует с именем
+        d[name] = []
+    # добавляем телефон в соответствующий список
+    d[name].append(number)
 print(*sorted(d.items()))
