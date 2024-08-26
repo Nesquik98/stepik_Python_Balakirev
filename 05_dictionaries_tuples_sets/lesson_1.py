@@ -41,3 +41,15 @@
 # if "3" in d:
 #     del d["3"]
 # print(*sorted(d.items()))
+
+
+# Task 5
+phone_numbers = input().strip()
+numbers_list = phone_numbers.split(' ')
+d = {}
+for number in numbers_list:
+    code = number[:2]
+    if code not in d:
+        d[code] = []
+    d[code].append(number) # добавляем номер в нужный список
+print(*sorted(d.items()))
