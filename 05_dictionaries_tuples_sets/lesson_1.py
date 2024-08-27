@@ -1,0 +1,101 @@
+# Task 1
+# d = {"house": "дом", "car": "машина",
+#      "tree": "дерево", "road": "дорога",
+#      "river": "река"}
+# print(d)
+#
+# lst = input().split()
+# lst = [x.split("=") for x in lst]
+# d = dict([(x[0], int(x[1])) for x in lst])
+# print(*sorted(d.items()))
+
+
+# Task 2
+# import sys
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# d = {}
+# for i in lst_in:
+#     key, value = i.split("=")
+#     key = int(key)
+#     d[key] = value
+# print(*sorted(d.items()))
+
+
+# Task 3
+# input_string = input().strip()  #удаляем пробелы вокруг строк
+# pairs = input_string.split(' ')
+# d = {pair.split('=')[0]: pair.split('=')[1] for pair in pairs}
+# keys_to_check = ['house', 'True', '5']
+# if all(key in d for key in keys_to_check):
+#     print("ДА")
+# else:
+#     print("НЕТ")
+
+
+# Task 4
+# input_string = input().strip()
+# pairs = input_string.split(' ')
+# d = {pair.split('=')[0]: pair.split('=')[1] for pair in pairs}
+# if "False" in d:
+#     del d["False"]
+# if "3" in d:
+#     del d["3"]
+# print(*sorted(d.items()))
+
+
+# Task 5
+# phone_numbers = input().strip()
+# numbers_list = phone_numbers.split(' ')
+# d = {}
+# for number in numbers_list:
+#     code = number[:2]
+#     if code not in d:
+#         d[code] = []
+#     d[code].append(number) # добавляем номер в нужный список
+# print(*sorted(d.items()))
+
+
+# Task 6
+# import sys
+# # считывание списка из входного потока
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# d = {}
+# for entry in lst_in:
+#     #разбивка строки на номер телефона и имя
+#     number, name = entry.split()
+#     if name not in d:
+#         # создание нового списка если оно отсутствует с именем
+#         d[name] = []
+#     # добавляем телефон в соответствующий список
+#     d[name].append(number)
+# print(*sorted(d.items()))
+
+
+# Task 7
+# import math
+# d = {}
+# while True:
+#     input_numbers = int(input())
+#     if input_numbers == 0:
+#         break
+#     if input_numbers in d:
+#         print(f"значение из кэша: {d[input_numbers]}")
+#     else:
+#         # вычисление корня числа, округление до двух знаков после запятой
+#         sqrt_value = round(math.sqrt(input_numbers), 2)
+#         # сохранение результата в словарь
+#         d[input_numbers] = sqrt_value
+#         print(sqrt_value)
+
+
+# Task 8
+import sys
+# Считывание линий из стандартного ввода, убирая \n и пробелы
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+cache = {}
+for url in lst_in:
+    if url not in cache:
+        cache[url] = f"HTML-страница для адреса {url}"
+        print(f"HTML-страница для адреса {url}")
+    else:
+        print(f"Взято из кэша: {cache[url]}")
