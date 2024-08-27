@@ -86,3 +86,16 @@
 #         # сохранение результата в словарь
 #         d[input_numbers] = sqrt_value
 #         print(sqrt_value)
+
+
+# Task 8
+import sys
+# Считывание линий из стандартного ввода, убирая \n и пробелы
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+cache = {}
+for url in lst_in:
+    if url not in cache:
+        cache[url] = f"HTML-страница для адреса {url}"
+        print(f"HTML-страница для адреса {url}")
+    else:
+        print(f"Взято из кэша: {cache[url]}")
