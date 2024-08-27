@@ -56,16 +56,33 @@
 
 
 # Task 6
-import sys
-# считывание списка из входного потока
-lst_in = list(map(str.strip, sys.stdin.readlines()))
-d = {}
-for entry in lst_in:
-    #разбивка строки на номер телефона и имя
-    number, name = entry.split()
-    if name not in d:
-        # создание нового списка если оно отсутствует с именем
-        d[name] = []
-    # добавляем телефон в соответствующий список
-    d[name].append(number)
-print(*sorted(d.items()))
+# import sys
+# # считывание списка из входного потока
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# d = {}
+# for entry in lst_in:
+#     #разбивка строки на номер телефона и имя
+#     number, name = entry.split()
+#     if name not in d:
+#         # создание нового списка если оно отсутствует с именем
+#         d[name] = []
+#     # добавляем телефон в соответствующий список
+#     d[name].append(number)
+# print(*sorted(d.items()))
+
+
+# Task 7
+# import math
+# d = {}
+# while True:
+#     input_numbers = int(input())
+#     if input_numbers == 0:
+#         break
+#     if input_numbers in d:
+#         print(f"значение из кэша: {d[input_numbers]}")
+#     else:
+#         # вычисление корня числа, округление до двух знаков после запятой
+#         sqrt_value = round(math.sqrt(input_numbers), 2)
+#         # сохранение результата в словарь
+#         d[input_numbers] = sqrt_value
+#         print(sqrt_value)
