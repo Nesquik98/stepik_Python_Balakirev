@@ -50,15 +50,47 @@
 
 
 # Task 4
-import sys
-lst_in = list(map(str.strip, sys.stdin.readlines()))
-birthdays = {}
-for entry in lst_in:
-    day, name = entry.split()
-    day = int(day)
-    if day in birthdays:
-        birthdays[day].append(name)
-    else:
-        birthdays[day] = [name]
-for day, name in birthdays.items():
-    print(f"{day}: {', '.join(name)}")
+# import sys
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# birthdays = {}
+# for entry in lst_in:
+#     day, name = entry.split()
+#     day = int(day)
+#     if day in birthdays:
+#         birthdays[day].append(name)
+#     else:
+#         birthdays[day] = [name]
+# for day, name in birthdays.items():
+#     print(f"{day}: {', '.join(name)}")
+
+# import sys
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# birthdays = {}
+# for entry in lst_in:
+#     day, name = entry.split()
+#     day = int(day)
+#     birthdays.setdefault(day, []).append(name)
+#
+# for day, name in birthdays.items():
+#     print(f"{day}: {', '.join(birthdays[day])}")
+
+
+# Task 5
+# things = {'карандаш': 20, 'зеркальце': 100, 'зонт': 500, 'рубашка': 300,
+#           'брюки': 1000, 'бумага': 200, 'молоток': 600, 'пила': 400, 'удочка': 1200,
+#           'расческа': 40, 'котелок': 820, 'палатка': 5240, 'брезент': 2130, 'спички': 10}
+#
+# sorted_things = sorted(things.items(), key=lambda item: item[1], reverse=True)
+#
+# limit_weight_kg = int(input())
+# limit_weight = limit_weight_kg * 1000
+#
+# backpack = []
+# backpack_weight = 0
+# for item, weight in sorted_things:
+#     if backpack_weight + weight <= limit_weight:
+#         backpack.append(item)
+#         backpack_weight += weight
+# print(' '.join(backpack))
+
+
