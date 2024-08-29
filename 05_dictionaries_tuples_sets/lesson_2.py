@@ -39,11 +39,26 @@
 
 
 # Task 3
-input_numbers = list(input().split())
-non_repeating_numbers = {}
-numbers_list = []
-for num in input_numbers:
-    if num not in non_repeating_numbers:
-        non_repeating_numbers[num] = 1
-        numbers_list.append(num)
-print(' '.join(numbers_list))
+# input_numbers = list(input().split())
+# non_repeating_numbers = {}
+# numbers_list = []
+# for num in input_numbers:
+#     if num not in non_repeating_numbers:
+#         non_repeating_numbers[num] = 1
+#         numbers_list.append(num)
+# print(' '.join(numbers_list))
+
+
+# Task 4
+import sys
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+birthdays = {}
+for entry in lst_in:
+    day, name = entry.split()
+    day = int(day)
+    if day in birthdays:
+        birthdays[day].append(name)
+    else:
+        birthdays[day] = [name]
+for day, name in birthdays.items():
+    print(f"{day}: {', '.join(name)}")
