@@ -24,11 +24,20 @@
 
 
 # Task 4
-names = tuple(input().split())
-filter_names = [name for name in names if 'ва' in name.lower()]
-print(' '.join(name.lower() for name in filter_names))
+# names = tuple(input().split())
+# filter_names = [name for name in names if 'ва' in name.lower()]
+# print(' '.join(name.lower() for name in filter_names))
 
 # or
+#
+# names = tuple(map(str.lower, input().split()))
+# print(*filter(lambda x: 'ва' in x, names))
 
-names = tuple(map(str.lower, input().split()))
-print(*filter(lambda x: 'ва' in x, names))
+
+# Task 5
+numbers = tuple(map(int, input().split()))
+unigue_numbers = ()
+for number in numbers:
+    if number not in unigue_numbers:
+        unigue_numbers += (number,)
+print(' '.join(map(str, unigue_numbers)))
