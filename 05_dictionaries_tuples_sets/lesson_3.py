@@ -35,9 +35,20 @@
 
 
 # Task 5
+# numbers = tuple(map(int, input().split()))
+# unigue_numbers = ()
+# for number in numbers:
+#     if number not in unigue_numbers:
+#         unigue_numbers += (number,)
+# print(' '.join(map(str, unigue_numbers)))
+
+
+# Task 6
 numbers = tuple(map(int, input().split()))
-unigue_numbers = ()
-for number in numbers:
-    if number not in unigue_numbers:
-        unigue_numbers += (number,)
-print(' '.join(map(str, unigue_numbers)))
+repeated_numbers = []
+
+for index, number in enumerate(numbers):
+    if numbers.count(number) > 1:
+        repeated_numbers.append(index)
+
+print(' '.join(map(str, repeated_numbers)))
