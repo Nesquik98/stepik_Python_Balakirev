@@ -17,10 +17,18 @@
 
 
 # Task 3
-cities = tuple(input().split())
-if 'Ульяновск' in cities:
-    cities = tuple(city for city in cities if city != 'Ульяновск')
-print(*cities)
+# cities = tuple(input().split())
+# if 'Ульяновск' in cities:
+#     cities = tuple(city for city in cities if city != 'Ульяновск')
+# print(*cities)
 
 
+# Task 4
+names = tuple(input().split())
+filter_names = [name for name in names if 'ва' in name.lower()]
+print(' '.join(name.lower() for name in filter_names))
 
+# or
+
+names = tuple(map(str.lower, input().split()))
+print(*filter(lambda x: 'ва' in x, names))
