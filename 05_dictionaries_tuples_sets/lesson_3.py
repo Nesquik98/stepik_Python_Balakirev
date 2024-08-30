@@ -44,11 +44,30 @@
 
 
 # Task 6
-numbers = tuple(map(int, input().split()))
-repeated_numbers = []
+# numbers = tuple(map(int, input().split()))
+# repeated_numbers = []
+#
+# for index, number in enumerate(numbers):
+#     if numbers.count(number) > 1:
+#         repeated_numbers.append(index)
+#
+# print(' '.join(map(str, repeated_numbers)))
 
-for index, number in enumerate(numbers):
-    if numbers.count(number) > 1:
-        repeated_numbers.append(index)
 
-print(' '.join(map(str, repeated_numbers)))
+# Task 7
+# t = ((1, 0, 0, 0, 0),
+#      (0, 1, 0, 0, 0),
+#      (0, 0, 1, 0, 0),
+#      (0, 0, 0, 1, 0),
+#      (0, 0, 0, 0, 1))
+# num = int(input())
+# t2 = tuple(row[:num] for row in t[:num])
+# for row in t2:
+#      print(' '.join(map(str, row)))
+
+# or
+
+num = int(input())
+mtrx = tuple(tuple(int(x == y) for x in range(num)) for y in range(num))
+for row in mtrx:
+     print(*row)
