@@ -67,7 +67,14 @@
 
 # or
 
-num = int(input())
-mtrx = tuple(tuple(int(x == y) for x in range(num)) for y in range(num))
-for row in mtrx:
-     print(*row)
+# num = int(input())
+# mtrx = tuple(tuple(int(x == y) for x in range(num)) for y in range(num))
+# for row in mtrx:
+#      print(*row)
+
+
+# Task 8
+# import sys
+# lst_in = list(map(str.strip, sys.stdin.readlines()))
+# menu = tuple(tuple(item.split()) for item in lst_in)
+# print(menu)
