@@ -8,3 +8,8 @@
 # num1 = set(list(map(int, input().split())))
 # num2 = set(list(map(int, input().split())))
 # print(*sorted(num1 - num2))
+
+# Task 3
+# num1 = set(list(map(int, input().split())))
+# num2 = set(list(map(int, input().split())))
+# print(*sorted(num1 ^ num2))
