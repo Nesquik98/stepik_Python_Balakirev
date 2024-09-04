@@ -15,4 +15,7 @@
 # print(*sorted(num1 ^ num2))
 
 # Task 4
-print(['НЕТ', 'ДА'][set(input().split()) == set(input().split())])
+# print(['НЕТ', 'ДА'][set(input().split()) == set(input().split())])
+
+# Task 5
+print('НЕ ДОПУЩЕН' if 2 in set(map(int, input().split())) else 'ДОПУЩЕН')
