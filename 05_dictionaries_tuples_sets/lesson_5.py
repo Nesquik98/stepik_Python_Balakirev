@@ -13,3 +13,6 @@
 # num1 = set(list(map(int, input().split())))
 # num2 = set(list(map(int, input().split())))
 # print(*sorted(num1 ^ num2))
+
+# Task 4
+print(['НЕТ', 'ДА'][set(input().split()) == set(input().split())])
