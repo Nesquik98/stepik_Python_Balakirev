@@ -21,4 +21,8 @@
 # print('НЕ ДОПУЩЕН' if 2 in set(map(int, input().split())) else 'ДОПУЩЕН')
 
 # Task 6
-print('ДА' if set(input().split()) <= set(input().split()) else 'НЕТ')
+# print('ДА' if set(input().split()) <= set(input().split()) else 'НЕТ')
+
+# Task 7
+number = int(input())
+print('ДА' if number % 2 == 0 and number % 3 == 0 and number % 5 == 0 else 'НЕТ')
