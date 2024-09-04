@@ -18,4 +18,7 @@
 # print(['НЕТ', 'ДА'][set(input().split()) == set(input().split())])
 
 # Task 5
-print('НЕ ДОПУЩЕН' if 2 in set(map(int, input().split())) else 'ДОПУЩЕН')
+# print('НЕ ДОПУЩЕН' if 2 in set(map(int, input().split())) else 'ДОПУЩЕН')
+
+# Task 6
+print('ДА' if set(input().split()) <= set(input().split()) else 'НЕТ')
