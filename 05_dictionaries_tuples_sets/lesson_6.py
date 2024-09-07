@@ -18,3 +18,21 @@
 # string = set(input().lower().split())
 # print(len({word for word in string if len(word) >= 3}))
 
+
+# Task 4
+# import sys
+# string = sys.stdin.read().strip().lower().split()
+# uniq_word = {word for word in string}
+# count_word = {word: string.count(word) for word in uniq_word}
+# print(count_word.get('и', 0))
+#
+# #OR
+#
+# lst = input().lower().split()
+# d = {i: lst.count(i) for  i in lst}
+# print(d['и'] if 'и' in d else 0)
+
+
+
+
+
