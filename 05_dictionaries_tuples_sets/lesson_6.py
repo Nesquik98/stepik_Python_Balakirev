@@ -13,3 +13,8 @@
 # lst_in = list(map(str.strip, sys.stdin.readlines()))
 # print(len({number for number in lst_in}))
 
+
+# Task 3
+# string = set(input().lower().split())
+# print(len({word for word in string if len(word) >= 3}))
+
