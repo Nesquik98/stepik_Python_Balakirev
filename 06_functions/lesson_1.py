@@ -8,8 +8,17 @@
 
 
 # Task 2
+# def sent_mail():
+#     text = f"Уважаемый, {input()}! Вы верно выполнили это задание!"
+#     print(text)
+#
+#
+# sent_mail()
+
+
+# Task 3
 def sent_mail():
-    text = f"Уважаемый, {input()}! Вы верно выполнили это задание!"
+    text = f"Предмет имеет вес: {input()} кг."
     print(text)
 
 
