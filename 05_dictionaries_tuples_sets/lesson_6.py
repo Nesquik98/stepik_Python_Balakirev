@@ -33,6 +33,14 @@
 # print(d['и'] if 'и' in d else 0)
 
 
+# Task 5
+import sys
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+d = {}
+for record in lst_in:
+    author, book = record.split(':')
+    d.setdefault(author, set()).add(author)
+
 
 
 
