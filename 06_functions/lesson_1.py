@@ -37,10 +37,29 @@
 
 
 # Task 5
-def entry_parameter(width, height):
-    print(f"Периметр прямоугольника, равен {2 * (width + height)}")
+# def entry_parameter(width, height):
+#     print(f"Периметр прямоугольника, равен {2 * (width + height)}")
+#
+#
+# width, height = map(int, input().split())
+#
+# entry_parameter(width, height)
 
 
-width, height = map(int, input().split())
+# Task 6
+def check_email(email):
+    valid_characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_."
+    if "@" not in email or "." not in email:
+        print("НЕТ")
+        return
 
-entry_parameter(width, height)
+    for symbol in email:
+        if symbol not in valid_characters and symbol != "@":
+            print("НЕТ")
+            return
+
+    print("ДА")
+
+
+email = input()
+check_email(email)
