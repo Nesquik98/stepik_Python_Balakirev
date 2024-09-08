@@ -26,11 +26,21 @@
 
 
 # Task 4
-def calculate_metrix(x):
-    v_min = min(x)
-    v_max = max(x)
-    v_sum = sum(x)
-    print(f"Min = {v_min}, max = {v_max}, sum = {v_sum}")
+# def calculate_metrix(x):
+#     v_min = min(x)
+#     v_max = max(x)
+#     v_sum = sum(x)
+#     print(f"Min = {v_min}, max = {v_max}, sum = {v_sum}")
+#
+#
+# calculate_metrix([int(x) for x in input().split()])
 
 
-calculate_metrix([int(x) for x in input().split()])
+# Task 5
+def entry_parameter(width, height):
+    print(f"Периметр прямоугольника, равен {2 * (width + height)}")
+
+
+width, height = map(int, input().split())
+
+entry_parameter(width, height)
