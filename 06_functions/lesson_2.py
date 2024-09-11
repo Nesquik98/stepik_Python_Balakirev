@@ -36,12 +36,21 @@
 
 
 # Task 5
-def parity_check(num: int) -> bool:
-    return num % 2 != 0
+# def parity_check(num: int) -> bool:
+#     return num % 2 != 0
+#
+#
+# lst_d = list(map(int, input().split()))
+# lst = [x for x in lst_d if parity_check(x)]
+# print(*lst)
 
 
-lst_d = list(map(int, input().split()))
-lst = [x for x in lst_d if parity_check(x)]
-print(*lst)
-
+# Task 6
+tp = input().strip()
+if tp == 'RECT':
+    def get_sq(length, width):
+        return length * width
+else:
+    def get_sq(side):
+        return side * side
 
