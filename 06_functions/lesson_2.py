@@ -46,11 +46,21 @@
 
 
 # Task 6
-tp = input().strip()
-if tp == 'RECT':
-    def get_sq(length, width):
-        return length * width
-else:
-    def get_sq(side):
-        return side * side
+# tp = input().strip()
+# if tp == 'RECT':
+#     def get_sq(length, width):
+#         return length * width
+# else:
+#     def get_sq(side):
+#         return side * side
+
+
+# Task 7
+def is_long_city(city: str) -> bool:
+    return len(city) >= 6
+
+
+cities = input().strip().split()
+lst = [city for city in cities if is_long_city(city)]
+print(*lst)
 
