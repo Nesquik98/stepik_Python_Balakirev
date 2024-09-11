@@ -66,11 +66,22 @@
 
 
 # Task 8
-def city_length(city: str) -> tuple:
-    return city, len(city)
+# def city_length(city: str) -> tuple:
+#     return city, len(city)
+#
+#
+# cities = input().strip().split()
+# d = {city: city_length(city)[1] for city in cities}
+# a = sorted(d, key=d.get)
+# print(*a)
 
 
-cities = input().strip().split()
-d = {city: city_length(city)[1] for city in cities}
-a = sorted(d, key=d.get)
-print(*a)
+# Task 9
+digs = list(map(int, input().strip().split()))
+
+
+def multiply(a: int, b: int) -> int:
+    return a * b
+
+
+print(multiply(min(digs), max(digs)))
