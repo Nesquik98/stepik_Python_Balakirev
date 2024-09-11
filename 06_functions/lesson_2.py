@@ -18,5 +18,19 @@
 
 
 # Task 3
-def is_large(s: str) -> bool:
-    return len(s) >= 3
+# def is_large(s: str) -> bool:
+#     return len(s) >= 3
+
+
+# Task 4
+def parity_check(number):
+    return number % 2 == 0
+
+
+while True:
+    x = int(input())
+    if x == 1:
+        break
+    if parity_check(x):
+        print(x)
+
