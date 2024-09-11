@@ -23,14 +23,25 @@
 
 
 # Task 4
-def parity_check(number):
-    return number % 2 == 0
+# def parity_check(number):
+#     return number % 2 == 0
+#
+#
+# while True:
+#     x = int(input())
+#     if x == 1:
+#         break
+#     if parity_check(x):
+#         print(x)
 
 
-while True:
-    x = int(input())
-    if x == 1:
-        break
-    if parity_check(x):
-        print(x)
+# Task 5
+def parity_check(num: int) -> bool:
+    return num % 2 != 0
+
+
+lst_d = list(map(int, input().split()))
+lst = [x for x in lst_d if parity_check(x)]
+print(*lst)
+
 
