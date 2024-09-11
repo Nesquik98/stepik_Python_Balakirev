@@ -56,11 +56,21 @@
 
 
 # Task 7
-def is_long_city(city: str) -> bool:
-    return len(city) >= 6
+# def is_long_city(city: str) -> bool:
+#     return len(city) >= 6
+#
+#
+# cities = input().strip().split()
+# lst = [city for city in cities if is_long_city(city)]
+# print(*lst)
+
+
+# Task 8
+def city_length(city: str) -> tuple:
+    return city, len(city)
 
 
 cities = input().strip().split()
-lst = [city for city in cities if is_long_city(city)]
-print(*lst)
-
+d = {city: city_length(city)[1] for city in cities}
+a = sorted(d, key=d.get)
+print(*a)
