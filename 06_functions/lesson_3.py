@@ -112,12 +112,26 @@
 
 
 # Task 4
-def get_string_value(text, tag='h1'):
-    result = f"<{tag}>{text}</{tag}>"
-    return result
+# def get_string_value(text, tag='h1'):
+#     result = f"<{tag}>{text}</{tag}>"
+#     return result
+#
+#
+# input_text = input()
+#
+# print(get_string_value(input_text))
+# print(get_string_value(input_text, tag='div'))
 
 
-input_text = input()
+# Task 5
+# def get_string_value(text, tag='div', up=False):
+#     tag = tag.upper() if up else tag
+#     return f"<{tag}>{text}</{tag}>"
+#
+#
+# input_text = input()
+#
+# print(get_string_value(input_text, up=True))
+# print(get_string_value(input_text))
 
-print(get_string_value(input_text))
-print(get_string_value(input_text, tag='div'))
+
