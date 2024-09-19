@@ -33,13 +33,29 @@
 
 
 # Task 4
-def verify(x):
-    flag = True
-    for i in range(len(x)-1):
-        for j in range(len(x)-1):
-            # если сумма 4х смежных элементов больше 1, значит найдени квадрат 2х2 в котором
-            # хотя бы два элемента больше нуля
-            if x[i][j] + x[i][j+1] + x[i+1][j] + x[i+1][j+1] > 1:
-                flag = False
-                break
-    return flag
+# def verify(x):
+#     flag = True
+#     for i in range(len(x)-1):
+#         for j in range(len(x)-1):
+#             # если сумма 4х смежных элементов больше 1, значит найдени квадрат 2х2 в котором
+#             # хотя бы два элемента больше нуля
+#             if x[i][j] + x[i][j+1] + x[i+1][j] + x[i+1][j+1] > 1:
+#                 flag = False
+#                 break
+#     return flag
+
+
+# Task 5
+# def str_min(s1, s2):
+#     if s1 < s2:
+#         return s1
+#     else:
+#         return s2
+#
+#
+# def str_min3(s1, s2, s3):
+#     return str_min(str_min(s1, s2), s3)
+#
+#
+# def str_min4(s1, s2, s3, s4):
+#     return str_min(str_min(s1, s2), str_min(s3, s4))
