@@ -16,17 +16,30 @@
 #     return max(cities, key=len)
 
 # Task 3
-def get_data_fig(*args, **kwargs):
-    perimetr = sum(args)
-    result = (perimetr,)
+# def get_data_fig(*args, **kwargs):
+#     perimetr = sum(args)
+#     result = (perimetr,)
+#
+#     if 'tp' in kwargs:
+#         result += (kwargs['tp'],)
+#     if 'color' in kwargs:
+#         result += (kwargs['color'],)
+#     if 'closed' in kwargs:
+#         result += (kwargs['closed'],)
+#     if 'width' in kwargs:
+#         result += (kwargs['width'],)
+#
+#     return result
 
-    if 'tp' in kwargs:
-        result += (kwargs['tp'],)
-    if 'color' in kwargs:
-        result += (kwargs['color'],)
-    if 'closed' in kwargs:
-        result += (kwargs['closed'],)
-    if 'width' in kwargs:
-        result += (kwargs['width'],)
 
-    return result
+# Task 4
+def verify(x):
+    flag = True
+    for i in range(len(x)-1):
+        for j in range(len(x)-1):
+            # если сумма 4х смежных элементов больше 1, значит найдени квадрат 2х2 в котором
+            # хотя бы два элемента больше нуля
+            if x[i][j] + x[i][j+1] + x[i+1][j] + x[i+1][j+1] > 1:
+                flag = False
+                break
+    return flag
