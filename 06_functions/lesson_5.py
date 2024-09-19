@@ -9,10 +9,12 @@
 # print(lst_c)
 
 # Task 3
-a, b = [int(x) for x in input().split()]
-lst = [*range(a, b + 1)]
+# a, b = [int(x) for x in input().split()]
+# lst = [*range(a, b + 1)]
+# print(*lst)
+
+# Task 4
+numbers = list(map(float, input().split()))
+cities = input().split()
+lst = [*numbers, *cities]
 print(*lst)
-
-
-
-
