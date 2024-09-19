@@ -14,7 +14,17 @@
 # print(*lst)
 
 # Task 4
-numbers = list(map(float, input().split()))
-cities = input().split()
-lst = [*numbers, *cities]
-print(*lst)
+# numbers = list(map(float, input().split()))
+# cities = input().split()
+# lst = [*numbers, *cities]
+# print(*lst)
+
+# Task 5
+# import sys
+#
+# lst_in = list(map(str.strip, sys.stdin.readlines()))  # ['название=url', ]
+#
+# menu = {'Главная': 'home', 'Архив': 'archive', 'Новости': 'news'}
+#
+# add_menu = dict(item.split('=') for item in lst_in)  # split: [['название'],['url']], [[],[]]
+# menu = {**menu, **add_menu}                          # dict: {'название': 'url', '': ''}
