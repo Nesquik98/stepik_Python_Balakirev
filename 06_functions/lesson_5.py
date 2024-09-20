@@ -50,14 +50,50 @@
 # d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
 
 # Task 6
-def get_path(N):
-    if N == 1:
-        return 1
-    elif N == 2:
-        return 2
-    else:
-        return get_path(N - 1) + get_path(N - 2)
+# def get_path(N):
+#     if N == 1:
+#         return 1
+#     elif N == 2:
+#         return 2
+#     else:
+#         return get_path(N - 1) + get_path(N - 2)
+#
+#
+# N = int(input())
+# print(get_path(N))
+
+# Task 7
+def merge_sort(lst):
+    if len(lst) <= 1:
+        return lst
+
+    mid = len(lst) // 2
+    left_half = lst[:mid]
+    right_half = lst[mid:]
+
+    left_sorted = merge_sort(left_half)
+    right_sorted = merge_sort(right_half)
+
+    return merge(left_sorted, right_sorted)
 
 
-N = int(input())
-print(get_path(N))
+def merge(left, right):
+    sorted_list = []
+    left_index, right_index = 0, 0
+
+    while left_index < len(left) and right_index < len(right):
+        if left[left_index] < right[right_index]:
+            sorted_list.append(left[left_index])
+            left_index += 1
+        else:
+            sorted_list.append(right[right_index])
+            right_index += 1
+
+    sorted_list.extend(left[left_index:])
+    sorted_list.extend(right[right_index:])
+
+    return sorted_list
+
+
+numbers = list(map(int, input().split()))
+print(' '.join(map(str, merge_sort(numbers))))
