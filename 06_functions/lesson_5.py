@@ -20,11 +20,19 @@
 # print(get_rec_sum(nums))
 
 # Task 3
-N = int(input())
+# N = int(input())
+#
+#
+# def fib_rec(N, f=[1, 1]):
+#     if len(f) == N:
+#         return f
+#     f.append(f[-1] + f[-2])
+#     return fib_rec(N, f)
 
-
-def fib_rec(N, f=[1, 1]):
-    if len(f) == N:
-        return f
-    f.append(f[-1] + f[-2])
-    return fib_rec(N, f)
+# Task 4
+n = int(input())
+def fact_rec(n):
+    if n == 0:
+        return 1
+    else:
+        return n * fact_rec(n - 1)
