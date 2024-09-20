@@ -38,13 +38,26 @@
 #         return n * fact_rec(n - 1)
 
 # Task 5
-def get_line_list(d, a=[]):
-    for element in d:
-        if isinstance(element, list):  # Если элемент - это список, рекурсивно обрабатываем его
-            get_line_list(element, a)
-        else:
-            a.append(element)
-    return a
+# def get_line_list(d, a=[]):
+#     for element in d:
+#         if isinstance(element, list):  # Если элемент - это список, рекурсивно обрабатываем его
+#             get_line_list(element, a)
+#         else:
+#             a.append(element)
+#     return a
+#
+#
+# d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
+
+# Task 6
+def get_path(N):
+    if N == 1:
+        return 1
+    elif N == 2:
+        return 2
+    else:
+        return get_path(N - 1) + get_path(N - 2)
 
 
-d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
+N = int(input())
+print(get_path(N))
