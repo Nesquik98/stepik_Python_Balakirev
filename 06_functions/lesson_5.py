@@ -30,9 +30,21 @@
 #     return fib_rec(N, f)
 
 # Task 4
-n = int(input())
-def fact_rec(n):
-    if n == 0:
-        return 1
-    else:
-        return n * fact_rec(n - 1)
+# n = int(input())
+# def fact_rec(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * fact_rec(n - 1)
+
+# Task 5
+def get_line_list(d, a=[]):
+    for element in d:
+        if isinstance(element, list):  # Если элемент - это список, рекурсивно обрабатываем его
+            get_line_list(element, a)
+        else:
+            a.append(element)
+    return a
+
+
+d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
