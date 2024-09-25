@@ -35,3 +35,37 @@
 #
 # range_value = filter_lst(digs, key=lambda x: 3 <= x <= 5)
 # print(*range_value)
+
+
+# Task 1
+# WIDTH = int(input())
+#
+#
+# def fun1():
+#     global WIDTH
+#     WIDTH += 1
+#     return WIDTH
+#
+# print(fun1())
+
+
+# Task 2
+# def func1():
+#     msg = input()
+#
+#     def func2():
+#         nonlocal msg
+#         msg = input()
+#         print(msg)
+#
+#     func2()
+#     print(msg)
+#
+#
+# func1()
+
+
+# Task 3
+# def create_global(x):
+#     global TOTAL
+#     TOTAL = x
