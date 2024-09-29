@@ -50,3 +50,21 @@
 # function_reference = close_function(input_tag)
 # result = function_reference(input_content)
 # print(result)
+
+
+# Task 5
+# def get_collection_type(tp):
+#     def convert_collection(numbers_str):
+#         numbers = map(int, numbers_str.split())
+#         if tp == 'tuple':
+#             return tuple(numbers)
+#         else:
+#             return list(numbers)
+#     return convert_collection
+#
+#
+# input_type = input()
+# input_numbers = input()
+# convert_function = get_collection_type(input_type)
+# lst = convert_function(input_numbers)
+# print(lst)
