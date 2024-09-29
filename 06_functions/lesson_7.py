@@ -35,3 +35,18 @@
 # function_reference = close_function()
 # result = function_reference(input_string)
 # print(result)
+
+
+# Task 4
+# def close_function(tag):
+#     def inner_function(content):
+#         return f"<{tag}>{content}</{tag}>"
+#     return inner_function
+#
+#
+# input_tag = input()
+# input_content = input()
+#
+# function_reference = close_function(input_tag)
+# result = function_reference(input_content)
+# print(result)
