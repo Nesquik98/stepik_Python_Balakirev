@@ -22,3 +22,16 @@
 #
 # result = cnt(k)
 # print(result)
+
+
+# Task 3
+# def close_function():
+#     def inner_function(s):
+#         return f"<h1>{s}</h1>"
+#     return inner_function
+#
+#
+# input_string = input()
+# function_reference = close_function()
+# result = function_reference(input_string)
+# print(result)
