@@ -46,3 +46,30 @@
 # lst = get_list(input_string)
 #
 # print(*lst)
+
+
+# Task 4 function converts input strings into lists and returns a dictionary
+def string_to_list(s1, s2):
+    list1 = s1.split()
+    list2 = s2.split()
+    return list1, list2
+
+
+def lists_to_dict_decorator(func):
+    def wrapper(s1, s2):
+        list1, list2 = func(s1, s2)
+        return dict(zip(list1, list2))
+    return wrapper
+
+
+@lists_to_dict_decorator
+def strings_to_list(s1, s2):
+    list1 = s1.split()
+    list2 = s2.split()
+    return list1, list2
+
+
+s1, s2 = input(), input()
+d = strings_to_list(s1, s2)
+
+print(*sorted(d.items()))
