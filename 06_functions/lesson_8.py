@@ -27,3 +27,22 @@
 #
 # menu = input()
 
+
+# Task 3 function sorts a list of numbers in ascending order
+# def sort_decorator(func):
+#     def wrapper(s):
+#         lst = func(s)
+#         return sorted(lst)
+#
+#     return wrapper
+#
+#
+# @sort_decorator
+# def get_list(s):
+#     return list(map(int, s.split()))
+#
+#
+# input_string = input()
+# lst = get_list(input_string)
+#
+# print(*lst)
